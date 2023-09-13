@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.small-text {
+  font-size: 11px;
+}
+@keyframes fade {
+  from {
+    position: relative;
+    left: 0%;
+  }
+  to {
+    position: relative;
+    left: -100%;
+  }
+}
+@keyframes fade2 {
+  from {
+    position: relative;
+    left: 100%;
+  }
+  to {
+    position: relative;
+    left: 0%;
+  }
+}
+h1,
+div p,
+div button {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.passive {
+  display: none;
+}
+@media screen and (max-width: 1048px) {
+  #box,
+  #box2 {
+    background-color: gainsboro;
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 847px) {
+  #first-nav,
+  .second-nav {
+    display: none;
+  }
+  #hidden-nav {
+    display: flex;
+  }
+  hr {
+    border-color: #e6e6e6;
+  }
+}
